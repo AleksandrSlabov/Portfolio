@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1,
+    "title": "TechnoMarket",
+    "img": "/logoTehNoMarket.jpeg",
+    "tech": ["React", "SCSS"],
+    "stack": {
+      "frontend": [
+        "React (CRA)",
+        "React Hooks (useState, useEffect, useContext, custom hooks)",
+        "Context API для управления состоянием корзины",
+        "SCSS (CSS-переменные, медиа-запросы, модульный подход)",
+        "Адаптивная верстка (mobile-first)"
+      ],
+      "backend": [
+        "Node.js (Vercel Serverless Functions)",
+        "Telegram Bot API для отправки сообщений",
+        "Redis (через Upstash) для ограничения частоты отправки (rate limiting)"
+      ]
+    },
+    "demo": "https://aleksandrslabov.github.io/petProjectTehno-Market/",
+    "repo": "https://github.com/AleksandrSlabov/petProjectTehno-Market",
+    "description": "Techno Market — мой pet-проект, интернет-магазин с корзиной, оформлением заказов и отправкой уведомлений в Telegram. Проект создан на React и демонстрирует работу с хуками, контекстом, модальными окнами, адаптивной версткой, формой обратной связи и оформлением заказа с передачей данных в Telegram-бота через серверную функцию на Vercel. Если вы перейдёте на демо-версию (ссылка ниже), можете заполнить форму и отправить — я обязательно увижу и прочту!",
+    "screen": [
+      "TehnoMarket/screen/tehno1.webp",
+      "TehnoMarket/screen/tehno2.webp",
+      "TehnoMarket/screen/tehno3.webp",
+      "TehnoMarket/screen/tehno4.webp",
+      "TehnoMarket/screen/tehno5.webp"
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Multi-Cinema",
+    "img": "/logoMultiCinema.svg",
+    "tech": ["HTML", "Vanila Java Script", "Vite", "SCSS"],
+    "stack": {
+      "frontend": [
+        "Vite - современный сборщик проекта",
+        "SCSS - препроцессор для стилей с вложенностью",
+        "Vanilla JavaScript (ES6+) - модульная архитектура",
+        "CSS Grid & Flexbox - современная верстка",
+        "CSS Custom Properties - переменные для цветов и размеров",
+        "LocalStorage API - хранение данных пользователя"
+      ],
+      "backend": []
+    },
+    "demo": "https://aleksandrslabov.github.io/Multi-Cinema/",
+    "repo": "https://github.com/AleksandrSlabov/Multi-Cinema",
+    "description": " Multi-Cime это pet-проект, полнофункциональный веб-сайт для поиска фильмов, сериалов и мультфильмов с системой регистрации и личным кабинетом",
+    "screen": [
+      "MultiCinema/screen/multi1.webp",
+      "MultiCinema/screen/multi2.webp",
+      "MultiCinema/screen/multi3.webp",
+      "MultiCinema/screen/multi4.webp"
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Castway",
+    "img": "/logoCastway.png",
+    "tech": ["HTML", "SCSS", "Vanila Java Script"],
+    "stack": {
+      "frontend": [
+        " HTML5 — семантическая разметка",
+        "SCSS — препроцессор CSS с переменными, миксинами и вложенностью",
+        "Vanilla JavaScript — нативный JS без зависимостей",
+
+        "Адаптивная верстка (mobile-first)"
+      ],
+      "backend": []
+    },
+    "demo": "",
+    "repo": "https://github.com/AleksandrSlabov/CASTWAY",
+    "description": "Статический веб-сайт для подкаста, созданный с использованием чистого HTML, SCSS и JavaScript. Проект включает адаптивный дизайн, интерактивные элементы и слайдер",
+    "screen": [
+      "castway/screen/castway1.png",
+      "castway/screen/castway2.png",
+      "castway/screen/castway3.png",
+      "castway/screen/castway4.png"
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "SneakMax",
+    "img": "/logoSneakMax.svg",
+    "tech": ["HTML", "SCSS", "Vanila Java Script"],
+    "stack": {
+      "frontend": [
+        " HTML5 - семантическая верстка, доступность",
+        "CSS3 - Grid, Flexbox, CSS Variables, анимации, медиа-запросы",
+        "JavaScript ES6+ - классы, модули, async/await, деструктуризация, стрелочные функции",
+        " Адаптивный дизайн - mobile-first подход"
+      ],
+      "backend": []
+    },
+    "demo": "",
+    "repo": "https://github.com/AleksandrSlabov/shop_sneack",
+    "description": "SneakMax — интернет-магазин спортивной обуви на чистом JavaScript (ES6+). Ключевые возможности: умная корзина (выбор размера, подсчёт суммы), продвинутая фильтрация (по цене, размеру, полу), адаптивный дизайн (mobile-first), слайдеры, модальные окна, загрузка товаров из JSON, квиз-подборщик и отправка заявок в Telegram",
+    "screen": ["sneackMax/screen/sneak1.png", "sneackMax/screen/sneak2.png"]
+  }
+]

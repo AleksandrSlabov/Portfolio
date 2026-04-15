@@ -1,0 +1,138 @@
+div {
+  width: 100%;
+  max-width: 100vw;
+
+  gap: var(--spaceMX);
+
+  justify-content: right;
+  height: 100%;
+
+  & .ul_tabs {
+    width: 100%;
+    max-width: 90vw;
+  }
+  & button {
+    width: 100%;
+    height: 50px;
+    padding: var(--spaceM);
+    border-radius: var(--borderRXL);
+
+    font-weight: 600;
+
+    &.active {
+      background-color: var(--colorBtnActive);
+    }
+  }
+}
+
+.secOne {
+  max-height: 60vh;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  & .timeLineWrap {
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    gap: var(--spaceS);
+
+    min-height: 100%;
+
+    width: 100%;
+    position: relative;
+    & p {
+      padding: var(--spaceS);
+
+      font-size: clamp(15px, 4vw, 20px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+
+      border-radius: var(--borderRXL);
+
+      background-color: #ccc;
+      transform: translateX(-50%);
+      height: 100%;
+      z-index: 2;
+    }
+
+    & .verticalLineDot {
+      width: 100%;
+      height: auto;
+
+      position: relative;
+
+      & .spanLine {
+        width: 6px;
+        height: 100%;
+
+        background-color: var(--colBorder);
+        z-index: 2;
+        opacity: 0;
+
+        border-radius: var(--borderRS);
+
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      & .dot {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 20px;
+        height: 20px;
+        border: var(--borderS) solid var(--colBorder);
+        background-color: var(--colorText);
+        opacity: 0.7;
+        border-radius: 50%;
+        z-index: 3;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    & button {
+      max-width: 100vw;
+      justify-content: center;
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .timeLineWrap {
+    & p {
+      padding: var(--spaceX);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .secOne {
+    width: 80vw;
+    overflow-y: none;
+    max-height: 100vh;
+  }
+  .timeLineWrap {
+    & div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

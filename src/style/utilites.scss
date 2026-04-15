@@ -1,0 +1,91 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexAliCenter {
+  display: flex;
+  align-items: center;
+}
+.flexColumnAliCentr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexColumnCenterCentr {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexSpaceAlCenterColumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexSpaceAlineCentr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexCenterCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover {
+  &:hover {
+    background-color: rgb(18, 216, 18);
+    transform: scale(1.1);
+  }
+}
+
+.btn {
+  // background-color: rgba(145, 8, 145, 0.979);
+  border: 1px solid rgba(145, 8, 145, 0.979);
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+@keyframes colorBlink {
+  0% {
+    color: var(--colorText);
+
+    border-color: var(--colBorder);
+  }
+  50% {
+    color: rgb(243, 120, 243);
+    border-color: rgb(248, 133, 248);
+  }
+  100% {
+    color: var(--colorText);
+    border-color: var(--colorText);
+  }
+}
+.blinking-logo {
+  animation: colorBlink 1.5s step-end infinite;
+}
+@keyframes colorBlinkbutton {
+  0% {
+    color: var(--colorText);
+    background-color: var(--colBorder);
+    border-color: var(--colorText);
+  }
+  50% {
+    background-color: var(--colorText);
+    color: black;
+    border-color: var(--colBorder);
+  }
+  100% {
+    color: var(--colorText);
+    border-color: var(--colorText);
+    background-color: var(--colorText);
+  }
+}
+.blinkButton {
+  animation: colorBlinkbutton 2s step-end infinite;
+}

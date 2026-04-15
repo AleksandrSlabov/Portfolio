@@ -1,0 +1,24 @@
+:root {
+  //space
+  --spaceX: 0.25rem; //4px
+  --spaceS: 0.5rem; //8px
+  --spaceM: 1rem; //16px
+  --spaceMX: 1.25rem; //20px
+  --spaceL: 1.5rem; //24px
+
+  //border-radius
+  --borderRX: 0.25rem; //4px
+  --borderRS: 0.5rem; //8px
+  --borderRM: 1rem; //16px
+  --borderRXL: 1.25rem; //20px
+
+  //border
+  --borderX: 0.125rem; //2px
+  --borderS: 0.25rem; //4px
+
+  //color
+  --colBorder: rgba(128, 0, 128, 0.918); //purple
+  --colGrey: rgba(255, 255, 255, 0.562); //grey
+  --colorText: rgb(252, 252, 252); //white
+  --colorBtnActive: rgba(145, 8, 145, 0.979); //button .active
+}

@@ -1,0 +1,67 @@
+.navLink {
+  flex-direction: column-reverse;
+
+  gap: var(--spaceX);
+
+  &.active {
+    color: var(--colBorder);
+    transform: scale(1.2);
+  }
+}
+
+.contPortfolio {
+  width: 40vw;
+  height: 100%;
+
+  & h3 {
+    border: var(--borderX) solid;
+    border-radius: var(--borderRXL);
+    padding: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(20px, 4vw, 30px);
+  }
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  max-height: 150px;
+  padding: var(--spaceM);
+  box-sizing: border-box;
+
+  gap: var(--spaceMX);
+
+  & img {
+    width: 5vw;
+    border-radius: 50%;
+  }
+  & .ul_Burger {
+    width: 100%;
+    max-width: 90vw;
+    padding-right: var(--spaceL);
+
+    & li {
+      cursor: pointer;
+      padding: var(--spaceX);
+      border-radius: var(--borderRX);
+      font-size: clamp(12px, 4vw, 20px);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+}
+@media (min-width: 766) {
+  .ul_Burger {
+    & p {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contPortfolio {
+    display: none;
+  }
+}

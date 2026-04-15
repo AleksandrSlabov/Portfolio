@@ -1,0 +1,61 @@
+.imgLogoHome {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.SecHome {
+  width: 100%;
+  // gap: var(--spaceMX);
+  height: 100%;
+  max-height: 90vh;
+
+  & .contTech {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spaceS);
+    max-width: 50vw;
+    width: 100%;
+    height: auto;
+
+    & span {
+      font-size: clamp(10px, 3vw, 20px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: var(--spaceS);
+      border: var(--borderX) solid var(--colBorder);
+      border-radius: var(--borderRXL);
+    }
+  }
+
+  & h2 {
+    font-size: clamp(25px, 5vw, 28px);
+
+    text-align: center;
+  }
+
+  & button {
+    max-width: 50vw;
+    width: 50%;
+    height: 50px;
+    border-radius: var(--borderRXL);
+
+    background-color: var(--colBorder);
+    border: var(--borderX) solid var(--colorText);
+
+    color: var(--colorText);
+    font-weight: 600;
+    font-size: clamp(10px, 4vw, 25px);
+
+    padding: clamp(0.7rem, 4vw, 2.5rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .SecHome {
+    height: 100%;
+  }
+}
