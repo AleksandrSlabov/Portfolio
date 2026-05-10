@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 function TabsSection({ openState, setOpenState, date }) {
   return (
-    <section className=" secOne flexCenterCenter  ">
+    <section className=" secOne  flexCenterCenter  ">
+      {/* <section className=" secOne    "> */}
       <div className="timeLineWrap">
         {date.map((elDate) => (
           <React.Fragment key={elDate.id}>
@@ -15,7 +16,15 @@ function TabsSection({ openState, setOpenState, date }) {
               ></span>
             </div>
 
-            <div className="flexColumnCenterCentr">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "flex-start",
+              }}
+              // className="flexColumnCenterCentr"
+            >
               <button
                 className={`dot ${openState === elDate.id ? "active" : " "} btn`}
                 onClick={() => {

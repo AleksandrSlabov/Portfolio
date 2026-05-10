@@ -19,7 +19,7 @@ function About() {
     setOpenCareer(null);
   };
   return (
-    <div className="flexSpaceAlCenterColumn">
+    <div className=" about-wrapper  flexSpaceAlCenterColumn">
       <ul className="ul_tabs flexSpaceAlineCentr">
         <li>
           <button
