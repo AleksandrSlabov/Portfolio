@@ -1,18 +1,153 @@
-# React + Vite
+# 👨‍💻 Портфолио Frontend-разработчика | Александр Слабов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Привет! Я Александр — начинающий Frontend-разработчик из Саратова. Это репозиторий моего персонального сайта-портфолио, созданного для демонстрации навыков, проектов и опыта. Здесь вы найдёте информацию обо мне, моей карьере, стеке технологий и pet-проектах.
 
-Currently, two official plugins are available:
+🌐 **Живая демонстрация:** [aleksandrslabov.github.io/Portfolio](https://aleksandrslabov.github.io/Portfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Обзор
+<div align="center">
+  <p align="left">
+Главная страница
+    </p >
+<img width="1046" height="453" alt="portLaptop" src="https://github.com/user-attachments/assets/31f7bcd3-a922-4f8b-a93a-bf833dacac37" />
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+ <p align="left">
+Главный страница  мобильной версии 
+    </p >
+<img width="297" height="521" alt="portMobilFirst" src="https://github.com/user-attachments/assets/43bb20da-e727-41e7-bf00-7b9530f4a92c" />
+ <p align="left">
+ Второй раздел сайта мобильная версия 
+      </p >
+<img width="295" height="529" alt="portMobilFirst2" src="https://github.com/user-attachments/assets/8aebe9cc-dae0-4e00-9770-f2dcac6f9d5a" />
 
-Note: This will impact Vite dev & build performances.
+</div >
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+- **Адаптивный дизайн** — от мобильных устройств до десктопа.
+- **Интерактивная биография** с таймлайном.
+- **Галерея проектов** с модальными окнами, слайдерами и подробным стеком.
+- **Форма обратной связи** с отправкой сообщений в Telegram.
+- **Анимации** и плавные переходы.
+
+---
+
+## 🛠 Технологический стек
+
+| Категория       | Инструменты                                                                 |
+|-----------------|------------------------------------------------------------------------------|
+| **Frontend**    | React 18, React Router, SCSS (CSS-переменные, медиа-запросы), Vite           |
+| **State**       | React Hooks (useState, useEffect), локальное состояние компонентов |
+| **Стилизация**  | SCSS, утилитарные классы, адаптивная верстка (mobile-first)                  |
+| **Данные**      | JSON-файлы для контента (биография, проекты, карьера)                        |
+| **Бэкенд**      | Vercel Serverless Functions, Telegram Bot API, Redis (Upstash) для rate limiting |
+| **Деплой**      | GitHub Pages                                                                 |
+| **Инструменты** | Git, npm, gh-pages, Vercel (для API)                                         |
+
+---
+
+## 🚀 Функциональные возможности
+
+### 🧭 Навигация и структура
+- **Главная страница** — приветствие, фото, облако технологий и кнопка быстрой связи.
+- **Обо мне** — вкладки «Обо мне», «Биография», «Карьера» с аккордеоном.
+- **Проекты** — карточки проектов, при клике открывается модальное окно:
+  - Слайдер скриншотов.
+  - Описание, ссылки на демо и репозиторий.
+  - Раскрывающийся список с подробным стеком (frontend/backend).
+- **Контакты** — форма с валидацией, отправка сообщения через серверную функцию в Telegram.
+
+### ✨ Особенности реализации
+- **Адаптивность** — гибкая верстка под любые экраны (смартфоны, планшеты, ПК).
+- **Доступность** — используются семантические теги и атрибуты `aria-*`.
+- **Блокировка скролла** при открытии модальных окон.
+- **Rate limiting** на бэкенде — защита от спама (не более 2 сообщений в час).
+- **Кастомные CSS-переменные** для единой цветовой схемы и отступов.
+
+---
+
+## 📁 Структура проекта
+
+``` 
+├── public/ # Статические файлы (логотипы, изображения проектов, скриншоты)
+├── src/
+│ ├── component/ # Переиспользуемые компоненты
+│ │ ├── main/ # MainContent — основной контейнер с маршрутами
+│ │ ├── navigation/ # Компонент навигации
+│ │ └── overlay/ # Компонент модального оверлея
+│ ├── data/ # JSON-файлы с контентом (биография, проекты, карьера, about)
+│ ├── pages/ # Компоненты страниц
+│ │ ├── about/ # Страница «Обо мне» (с вкладками и таймлайном)
+│ │ ├── contacts/ # Страница с формой обратной связи
+│ │ ├── home/ # Главная страница
+│ │ └── resume/ # Страница с проектами (сетка и модальные окна)
+│ ├── style/ # Глобальные стили (переменные, утилитарные классы)
+│ ├── App.jsx # Корневой компонент с роутингом
+│ ├── App.scss # Стили App
+│ ├── index.scss # Глобальный сброс и базовые стили
+│ └── main.jsx # Точка входа в приложение
+├── index.html # Шаблон HTML
+├── package.json # Зависимости и скрипты
+├── vite.config.js # Конфигурация Vite
+└── .eslintrc.cjs # Настройки ESLint
+```
+
+
+---
+
+## 🔧 Как запустить локально
+
+1. **Клонируйте репозиторий**
+   ```bash
+   git clone https://github.com/AleksandrSlabov/Portfolio.git
+   cd Portfolio
+   ```
+2. **Установите зависимости**
+    ```
+    npm install
+    ```
+3. **Запустите dev-сервер**
+   ```
+   npm run dev
+   ```
+Приложение откроется по адресу http://localhost:5173.
+
+4. **Сборка для продакшена**
+   ```
+   npm run build
+   ```
+Готовые файлы будут в папке dist.
+
+5. **Деплой на GitHub Pages (автоматически через gh-pages)**
+   ```
+   npm run deploy
+   ```
+🌐 Деплой и хостинг
+Фронтенд размещён на GitHub Pages с использованием пакета gh-pages.
+Серверная часть (отправка формы) развёрнута на Vercel как serverless-функция.
+
+📬 Контакты
+Telegram: @sancheszzzzz
+
+GitHub: AleksandrSlabov
+
+Email: доступен на сайте (иконка конверта)
+
+Буду рад обратной связи и предложениям!
+
+📝 Лицензия
+Этот проект создан в учебных и демонстрационных целях. Вы можете использовать код для вдохновения, но просьба указывать авторство при копировании значительных частей.
+
+⭐ Если вам понравился проект, поставьте звёздочку на GitHub! ⭐
+
+P.S Данный readme.md был написан с небольшой помощю ИИ.
+
+   
+
+
+   
+      
+
+
